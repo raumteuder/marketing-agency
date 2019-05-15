@@ -156,10 +156,12 @@ article.details {
   .navbar-links ul {
     display: none;
     text-align: center;
+    padding-left: 0;
     position: absolute;
     background: var(--main-bg-color);
     width: 80%;
     top: 3.5rem;
+    left: 2rem;
   }
   .burger:hover ~ ul {
     display: block !important;
@@ -183,8 +185,8 @@ article.details {
     margin-right: 16px;
     margin-bottom: 16px;
   }
-  .tron-image {
-    width: 100% !important;
+  .tron-image img {
+    width: 350px;
   }
 
   main {
@@ -200,8 +202,6 @@ article.details {
   article.heading {
     padding: 0 0 10% 0;
     width: 100%;
-  }
-  article.details {
-    width: 70%;
+    font-weight: 100000;
   }
 }
