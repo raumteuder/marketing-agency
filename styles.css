@@ -1,27 +1,119 @@
 * {
   padding: 0;
 }
-
+html {
+  margin-top: 0.5rem;
+}
 body {
   background-color: #676ac7;
+  margin: auto;
 }
-.container {
-}
+
 header {
   width: 100%;
-  float: left;
+  color: white;
   height: 60px;
 }
-nav {
-  /* float: left; */
-}
+
 .brand {
   color: white;
 }
-.navbar-links > ul > li > a {
-  text-decoration: none;
+.navbar-links ul {
   float: right;
 }
+
 .navbar-links > ul > li {
   display: inline;
+}
+
+.navbar-links > ul > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.navbar-icon {
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  position: absolute;
+}
+.navbar-links {
+  padding-top: 0;
+}
+
+section.jumbotron {
+  padding-top: 1rem;
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  color: white;
+}
+
+.tron-details {
+  text-align: left;
+}
+.tron-details > h1 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+article.tron-details {
+  width: 50%;
+}
+
+article.tron-image {
+  width: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  width: 70%;
+  margin: 3rem auto;
+  align-items: top;
+  color: black;
+}
+
+article.details > h3 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+article.heading {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  width: 25%;
+}
+div.bottom-container {
+  background: white;
+}
+
+article.image {
+  margin-top: 1rem;
+}
+
+article.details {
+  width: 60%;
+  margin: 0 5rem;
+}
+
+@media all and (max-width: 500px) {
+  body {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar-icon {
+    display: block;
+    margin-left: 30px;
+    /* margin: 0 auto; */
+  }
+  .navbar-links {
+    display: none;
+  }
 }
