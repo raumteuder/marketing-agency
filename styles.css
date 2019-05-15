@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-color: #676ac7;
+}
+.container {
+}
+header {
+  width: 100%;
+  float: left;
+  height: 60px;
+}
+nav {
+  /* float: left; */
+}
+.brand {
+  color: white;
+}
+.navbar-links > ul > li > a {
+  text-decoration: none;
+  float: right;
+}
+.navbar-links > ul > li {
+  display: inline;
+}
