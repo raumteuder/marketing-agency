@@ -8,7 +8,7 @@ body {
   background-color: var(--main-bg-color);
   margin: auto;
 }
-.top-container {
+div.top-container {
   width: 80%;
   margin: auto;
 }
@@ -21,31 +21,32 @@ header {
   padding: 0 10px;
 }
 
-.brand {
+i.brand {
   color: white;
 }
-.navbar-links ul {
+div.navbar-links {
+  padding-top: 0;
+}
+
+div.navbar-links ul {
   float: right;
 }
 
-.navbar-links > ul > li {
+div.navbar-links > ul > li {
   display: inline;
 }
 
-.navbar-links > ul > li > a {
+div.navbar-links > ul > li > a {
   color: white;
   text-decoration: none;
   padding: 0 10px;
 }
 
-.navbar-icon {
+div.navbar-icon {
   font-size: 2rem;
   padding-left: 1rem;
   padding-top: 0.5rem;
   position: absolute;
-}
-.navbar-links {
-  padding-top: 0;
 }
 
 section.jumbotron {
@@ -58,10 +59,10 @@ section.jumbotron {
   color: white;
 }
 
-.tron-details {
+article.tron-details {
   text-align: left;
 }
-.tron-details > h1 {
+article.tron-details > h1 {
   text-transform: capitalize;
   font-size: 2rem;
 }
@@ -77,9 +78,9 @@ main {
   display: flex;
   justify-content: center;
 }
-.content {
+section.content {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 3rem auto;
   align-items: top;
   color: black;
@@ -132,14 +133,10 @@ article.details {
   .container {
     /* position: relative; */
   }
-
-  .header {
-    width: 100%;
-  }
   nav {
     display: block;
   }
-  .navbar-links {
+  div.navbar-links {
     display: block;
     position: relative;
   }
@@ -153,7 +150,7 @@ article.details {
     font-size: 2rem;
   }
 
-  .navbar-links ul {
+  div.navbar-links ul {
     display: none;
     text-align: center;
     padding-left: 0;
@@ -166,11 +163,11 @@ article.details {
   .burger:hover ~ ul {
     display: block !important;
   }
-  .navbar-links > ul > li {
+  div.navbar-links > ul > li {
     padding: 10px;
     display: block;
   }
-  .navbar-icon {
+  div.navbar-icon {
     display: block;
     /* margin-left: 30px; */
     margin: 0 auto;
@@ -179,13 +176,13 @@ article.details {
   section.jumbotron {
     display: inline;
   }
-  .tron-details {
+  article.tron-details {
     width: 100% !important;
     text-align: center !important;
     margin-right: 16px;
     margin-bottom: 16px;
   }
-  .tron-image img {
+  article.tron-image img {
     width: 350px;
   }
 
@@ -202,6 +199,5 @@ article.details {
   article.heading {
     padding: 0 0 10% 0;
     width: 100%;
-    font-weight: 100000;
   }
 }
