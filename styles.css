@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 div.top-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -40,6 +40,37 @@ div.navbar-links > ul > li > a {
   color: white;
   text-decoration: none;
   padding: 0 10px;
+}
+.navbar-links ul li {
+  position: relative;
+}
+
+div.navbar-links ul li ul {
+  display: none;
+  padding: 10px 0;
+  padding-left: 0px;
+  position: absolute;
+  right: 6px;
+  background-color: var(--main-bg-color);
+  opacity: 0.6;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 100px;
+  list-style: none;
+  text-decoration: none;
+}
+
+div.navbar-links ul li:hover ul {
+  display: block;
+}
+
+div.navbar-links ul li ul li a {
+  text-decoration: none;
+  color: white;
+}
+div.navbar-links ul li ul li {
+  text-align: center;
+  padding: 5px 0;
 }
 
 div.navbar-icon {
@@ -125,14 +156,21 @@ article.details {
 .burger {
   display: none !important;
 }
+.navbar-links > ul > li > button {
+  background-color: white;
+  color: var(--main-bg-color);
+  border: 1px solid;
+}
+.navbar-links > ul > li > button:hover {
+  background-color: var(--main-bg-color);
+  color: white;
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   body {
     width: 100%;
   }
-  .container {
-    /* position: relative; */
-  }
+
   nav {
     display: block;
   }
@@ -157,16 +195,28 @@ article.details {
     position: absolute;
     background: var(--main-bg-color);
     width: 80%;
-    top: 3.5rem;
+    top: 1.5rem;
     left: 2rem;
+    opacity: 0.9;
   }
-  .burger:hover ~ ul {
+  div.navbar-links:hover > ul {
     display: block !important;
   }
   div.navbar-links > ul > li {
     padding: 10px;
     display: block;
   }
+
+  div.navbar-links ul li ul {
+    display: none;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    background: var(--main-bg-color);
+    opacity: 1;
+    z-index: 1;
+  }
+
   div.navbar-icon {
     display: block;
     /* margin-left: 30px; */
@@ -182,8 +232,11 @@ article.details {
     margin-right: 16px;
     margin-bottom: 16px;
   }
+  article.tron-image {
+    width: 100%;
+  }
   article.tron-image img {
-    width: 350px;
+    width: 90%;
   }
 
   main {
@@ -195,6 +248,12 @@ article.details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+  }
+  article.details {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 0;
   }
   article.heading {
     padding: 0 0 10% 0;
