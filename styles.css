@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 div.top-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -54,7 +54,7 @@ div.navbar-links ul li ul {
   background-color: var(--main-bg-color);
   opacity: 0.6;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid white;
   width: 100px;
   list-style: none;
   text-decoration: none;
@@ -156,8 +156,17 @@ article.details {
 .burger {
   display: none !important;
 }
+.navbar-links > ul > li > button {
+  background-color: white;
+  color: var(--main-bg-color);
+  border: 1px solid;
+}
+.navbar-links > ul > li > button:hover {
+  background-color: var(--main-bg-color);
+  color: white;
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   body {
     width: 100%;
   }
@@ -201,12 +210,11 @@ article.details {
   div.navbar-links ul li ul {
     display: none;
     position: absolute;
-    left: 100px;
-    top: 25px;
+    left: 3%;
+    top: 0;
     background: var(--main-bg-color);
     opacity: 1;
     z-index: 1;
-    border: none;
   }
 
   div.navbar-icon {
@@ -228,7 +236,7 @@ article.details {
     width: 100%;
   }
   article.tron-image img {
-    width: 100%;
+    width: 90%;
   }
 
   main {
@@ -240,6 +248,12 @@ article.details {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+  }
+  article.details {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 0;
   }
   article.heading {
     padding: 0 0 10% 0;
